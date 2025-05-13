@@ -2,10 +2,6 @@ function comprar(){
     let tipoDeIngresso = document.getElementById("tipo-ingresso");
     let quantidadeDeIngressos = parseInt (document.getElementById("Quantidade").value);
 
-    if (quantidadeDeIngressos > 5){
-        alert ("A quantidade máxima de ingressos por pessoa é de 5");
-        return;
-    }
     if (tipoDeIngresso.value == "pista") {
         comprarPista(quantidadeDeIngressos);
     }
